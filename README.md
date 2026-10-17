@@ -39,9 +39,22 @@ The historical notebook filename `SARIMA_alone.ipynb` is retained for traceabili
 
 ## Experimental methodology
 
-After 168 warm-up hours, 43,680 prepared rows are divided chronologically into 70% base fitting, 7.5% early stopping, 7.5% residual calibration and 15% testing (endpoints 30,576 / 33,852 / 37,128 / 43,680). XGBoost reserves the final 20% of calibration for its stopping decision. Seed 42 is recorded.
+The dataset was divided chronologically to prevent data leakage, with the first 168 hours used as historical context.
 
-All six exports use identical **6,552 observed hourly targets, 3 April–31 December 2024**, with finite predictions and no duplicate timestamps. These are successive rolling one-hour-ahead forecasts with prior observations available at each step. A week of displayed predictions is not a week-ahead forecast issued once. Five ordinary runs and one recovered evaluation are complete; none of the six selected manifests flags a smoke run.
+The remaining data was split as follows:
+
+| Purpose | Percentage |
+|---|---:|
+| Model Training | 70% |
+| Validation (Early Stopping) | 7.5% |
+| Hybrid Model Calibration | 7.5% |
+| Testing | 15% |
+
+For XGBoost, the final 20% of its calibration data was reserved for early stopping. A random seed of 42 was used.
+
+All six models were evaluated on the same **6,552 hourly test observations (3 April – 31 December 2024)** using rolling one-hour-ahead forecasting.
+
+Five models completed standard experiment runs. The TFT+XGBoost result was obtained through a recovered evaluation using an existing TFT checkpoint and a refitted XGBoost model. None of the reported results came from smoke tests.
 
 ## Metrics and results
 
