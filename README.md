@@ -130,8 +130,16 @@ PUBLICATION_CHECKLIST.md
 
 ## Limitations
 
-Single seed, no uncertainty estimates, and closely spaced leading scores limit ranking claims. Exact final-run source revision linkage, full epoch logs, the original hybrid checkpoint-selection history and the recovery script are unavailable. The shared source was recovered from the earlier corrected archive; its presence does not prove it is byte-identical to every final Colab run. Full raw prediction tables, private dataset and checkpoints are intentionally excluded. Dataset provenance, units, timezone and public redistribution permission remain unestablished. This checkout supports method inspection and software tests but cannot guarantee exact recovered inference reproduction. See [validation](docs/VALIDATION.md) and the [publication checklist](PUBLICATION_CHECKLIST.md).
+Although all six models were evaluated on the same test dataset, the project has a few limitations:
 
+- Experiments were conducted using a single random seed, without repeated trials.
+- The top-performing models achieved very similar results, so their ranking should be interpreted cautiously.
+- Some original experiment records, including complete training logs and the hybrid model's recovery script, are unavailable.
+- The shared implementation is provided, but exact reproduction of every final Colab run cannot be guaranteed.
+
+The repository includes the implementation, evaluation results and validation tests for reviewing the methodology.
+
+For additional details, see the [Validation Report](docs/VALIDATION.md) and [Publication Checklist](PUBLICATION_CHECKLIST.md).
 ## Future work
 
 Document dataset provenance and units; preserve exact code revisions, environments, training logs and checkpoint-selection records; evaluate multiple seeds and uncertainty; examine errors by month/hour and peak events; test additional horizons and a separately specified seasonal statistical model; validate deployment with real prediction-time covariates.
