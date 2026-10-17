@@ -1,0 +1,19 @@
+{
+  "HYBRID_LSTM+Random_Forests3 (3).ipynb": "e9f2c5cf34611fdfefdce13056d51d62698035efa16b4f9af207174f40cef8e8",
+  "Hybrid_TFT_XGBoost_Upgraded (2) (2).ipynb": "25c75060785b76e27331e9d0986f4f6bf8afa7da269e35a2f13007827a64d671",
+  "LSTM_alone.ipynb": "1f3865468a4bc78cb62cc5a4067102d51430d0affba4268319e83ddf8a2275ec",
+  "Random_Forests.ipynb": "4eb3a4638214e1eed77fa7260943405738d2cc3993bc1cc9b0bf2d4804e060c2",
+  "requirements.txt": "a5fa51a81ea7564c7a387a6dee7446b225bf3995a603d28d12905461208882d0",
+  "SARIMA_alone.ipynb": "c12d77d6e2a950fabff76bd93b646f3368928a78a4a62fbb046de58724791211",
+  "tft_alone.ipynb": "8a59251afc28d4d41e268841990c6257b61a50f43ccc7d6ae398d585d45f95b0",
+  "forecasting/data.py": "e2dde496d6a5dd9977ddd17c74ddc7818ab8f53000e4c541132af8f6b78e7730",
+  "forecasting/evaluation.py": "2d24ead54ed6ba8ce156921ba4686c80f30be10483b55ebb42bfa8aca7fb001a",
+  "forecasting/experiment.py": "7086765d5ff014a1b3d048ecb5ab2c4ca6daa604fbf7c5fa47589efb3d63a970",
+  "forecasting/models.py": "e0fda75c88438703ad249544d957d293a303c24f88ce6ca4e05e4aafbcdb6305",
+  "forecasting/neural.py": "1c7f0f05197ecfcceb4b4004d03fbbece42019c1e103352e8a978cb08b13f47e",
+  "forecasting/__init__.py": "6c2cfc6c15d51894df88bbeedfb88d5ef7226ebfda72785d957d792828d95e76",
+  "forecasting/__main__.py": "e5efad5bcac75fee7d5adffa11c0034e518ba16d4e22ad7fc3de0d33a3a8779e",
+  "tests/test_data.py": "50e313fa857214143980d0d18f2697aced0ab69174f06330891df8aa453e33bf",
+  "tests/test_models.py": "edff03c2ee8acef4322f01ef62a182ceb127b4cbbb604c3ba7472fd0a8c64eca",
+  "tests/test_neural_optimization.py": "1d36863af4287835ab879a28e726b32a9c2dc3f179a3e2bea469880aef3b3023"
+}

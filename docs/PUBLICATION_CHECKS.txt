@@ -1,0 +1,25 @@
+Python syntax OK: forecasting\data.py
+Python syntax OK: forecasting\evaluation.py
+Python syntax OK: forecasting\experiment.py
+Python syntax OK: forecasting\models.py
+Python syntax OK: forecasting\neural.py
+Python syntax OK: forecasting\__init__.py
+Python syntax OK: forecasting\__main__.py
+Python syntax OK: tests\test_data.py
+Python syntax OK: tests\test_models.py
+Python syntax OK: tests\test_neural_optimization.py
+Notebook structure/code/cleared output OK: HYBRID_LSTM+Random_Forests3.ipynb
+Notebook structure/code/cleared output OK: Hybrid_TFT_XGBoost_Upgraded.ipynb
+Notebook structure/code/cleared output OK: LSTM_alone.ipynb
+Notebook structure/code/cleared output OK: Random_Forests.ipynb
+Notebook structure/code/cleared output OK: SARIMA_alone.ipynb
+Notebook structure/code/cleared output OK: tft_alone.ipynb
+All README/gallery local links resolve.
+No excluded-model mentions in repository text.
+Eight PNGs visually inspected: six authentic original forecasts and two rebuilt comparisons; no unsupported series.
+Six prediction sets independently recalculated and aligned on 6,552 identical measured targets.
+All six live Drive metric files agree with extracted metrics.
+Private input hash discrepancy and existing local CUDA source patch disclosed.
+No new model training and no fresh environment installation performed.
+GitHub creation/publication blocked: no create-repository tool, no authenticated CLI. No remote branch/tree verified.
+Regression tests: 21 passed, 18 warnings in 42.31s

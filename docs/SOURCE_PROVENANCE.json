@@ -1,0 +1,79 @@
+{
+  "preserved_source_sha256": {
+    "forecasting/data.py": "e2dde496d6a5dd9977ddd17c74ddc7818ab8f53000e4c541132af8f6b78e7730",
+    "forecasting/evaluation.py": "2d24ead54ed6ba8ce156921ba4686c80f30be10483b55ebb42bfa8aca7fb001a",
+    "forecasting/experiment.py": "7086765d5ff014a1b3d048ecb5ab2c4ca6daa604fbf7c5fa47589efb3d63a970",
+    "forecasting/models.py": "d2e697779a4b7b92add8a08722328a4590c5f16b80e35944126bc6687aa6834b",
+    "forecasting/neural.py": "1c7f0f05197ecfcceb4b4004d03fbbece42019c1e103352e8a978cb08b13f47e",
+    "forecasting/__init__.py": "6c2cfc6c15d51894df88bbeedfb88d5ef7226ebfda72785d957d792828d95e76",
+    "forecasting/__main__.py": "e5efad5bcac75fee7d5adffa11c0034e518ba16d4e22ad7fc3de0d33a3a8779e",
+    "tests/test_data.py": "50e313fa857214143980d0d18f2697aced0ab69174f06330891df8aa453e33bf",
+    "tests/test_models.py": "edff03c2ee8acef4322f01ef62a182ceb127b4cbbb604c3ba7472fd0a8c64eca",
+    "tests/test_neural_optimization.py": "1d36863af4287835ab879a28e726b32a9c2dc3f179a3e2bea469880aef3b3023",
+    "original_notebook/Random_Forests.ipynb": "4eb3a4638214e1eed77fa7260943405738d2cc3993bc1cc9b0bf2d4804e060c2",
+    "original_notebook/LSTM_alone.ipynb": "1f3865468a4bc78cb62cc5a4067102d51430d0affba4268319e83ddf8a2275ec",
+    "original_notebook/SARIMA_alone.ipynb": "c12d77d6e2a950fabff76bd93b646f3368928a78a4a62fbb046de58724791211",
+    "original_notebook/tft_alone.ipynb": "8a59251afc28d4d41e268841990c6257b61a50f43ccc7d6ae398d585d45f95b0",
+    "original_notebook/HYBRID_LSTM+Random_Forests3 (3).ipynb": "e9f2c5cf34611fdfefdce13056d51d62698035efa16b4f9af207174f40cef8e8",
+    "original_notebook/Hybrid_TFT_XGBoost_Upgraded (2) (2).ipynb": "25c75060785b76e27331e9d0986f4f6bf8afa7da269e35a2f13007827a64d671"
+  },
+  "corrected_zip_source_matches": {
+    "forecasting\\data.py": true,
+    "forecasting\\evaluation.py": true,
+    "forecasting\\experiment.py": true,
+    "forecasting\\models.py": false,
+    "forecasting\\neural.py": true,
+    "forecasting\\__init__.py": true,
+    "forecasting\\__main__.py": true
+  },
+  "prediction_checks": [
+    {
+      "model": "tft_xgboost",
+      "prediction_sha256": "7c429cea9c86d740809d92f7ae47f6b2e2978cfa453111fdde634c1eebf934db",
+      "plot_sha256": "3c7d318fe2f73623e6e4d6f5ad50fcf4b53baf3eccaf0d40999b83c23a2381c4",
+      "verified_rows": 6552,
+      "metrics_recomputed": true,
+      "raw_predictions_published": false
+    },
+    {
+      "model": "tft",
+      "prediction_sha256": "d6d54ded1b9af8a5559f03ecfb767e1350af5de51d29884b68ab2c46e86a9278",
+      "plot_sha256": "b8b797bfadd5ccb5e84e3162f94d380743d9b7601ebd3a19c69c46fa37ee99f4",
+      "verified_rows": 6552,
+      "metrics_recomputed": true,
+      "raw_predictions_published": false
+    },
+    {
+      "model": "lstm",
+      "prediction_sha256": "f02ef4e37df381c1345574693e943bf47113102b87b647eb19462b12cfaa8db9",
+      "plot_sha256": "6736d94e76527c6f3a5dd02c362bc66fdc00afbfe90ba2699edb01023caadd69",
+      "verified_rows": 6552,
+      "metrics_recomputed": true,
+      "raw_predictions_published": false
+    },
+    {
+      "model": "lstm_rf",
+      "prediction_sha256": "1d70f513af844358199e9ef0e2ff0bf7fcf5ca691384f41a5c00e6a8ea6da7d9",
+      "plot_sha256": "922800d203549ba1dbe08567ce7cccb08069b736e97807dc4b0f8cffb58b87cf",
+      "verified_rows": 6552,
+      "metrics_recomputed": true,
+      "raw_predictions_published": false
+    },
+    {
+      "model": "random_forest",
+      "prediction_sha256": "7530f665e77ece09cca498a18bd1c1e1b18e4c59b749ebac349f1f701438b6e7",
+      "plot_sha256": "51060cc240428af020a251bf882a625c1e959bcb50ebc86ac3be7ddc13a85566",
+      "verified_rows": 6552,
+      "metrics_recomputed": true,
+      "raw_predictions_published": false
+    },
+    {
+      "model": "arimax",
+      "prediction_sha256": "496652e100617f3fb5575123daa398180b58d7861647903923cbd80a76ce0f3d",
+      "plot_sha256": "d6279e83cae196402868e2907dcc245fdf829640b25d49e857796ce8b1c685aa",
+      "verified_rows": 6552,
+      "metrics_recomputed": true,
+      "raw_predictions_published": false
+    }
+  ]
+}

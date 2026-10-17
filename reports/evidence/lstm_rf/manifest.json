@@ -1,0 +1,56 @@
+{
+  "model": "lstm_rf",
+  "data_kind": "provided_csv",
+  "input_sha256": "b22c568fff1ef102ad6366dd85812f41aafc8034ea07b10253e19c61c60810f9",
+  "input_rows": 43848,
+  "prepared_rows": 43680,
+  "test_start": "2024-04-03 00:00:00",
+  "test_end": "2024-12-31 23:00:00",
+  "forecast_horizon_hours": 1,
+  "evaluation": "rolling_one_step_observed_history",
+  "split_boundaries": [
+    30576,
+    33852,
+    37128,
+    43680
+  ],
+  "encoder_length": 168,
+  "seed": 42,
+  "max_epochs": 50,
+  "smoke_test": false,
+  "max_rows": null,
+  "elapsed_seconds": 1212.015,
+  "python": "3.13.15",
+  "libraries": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "statsmodels": "0.14.4",
+    "torch": "2.7.1+cu126",
+    "lightning": "2.5.2",
+    "pytorch-forecasting": "1.4.0",
+    "xgboost": "3.0.2"
+  },
+  "input_missing_counts": {
+    "Timestamp": 0,
+    "hour": 11,
+    "dayofweek": 9,
+    "month": 8,
+    "year": 5,
+    "dayofyear": 5,
+    "Temperature": 7,
+    "Humidity": 10,
+    "Demand": 7
+  },
+  "inferred_hour_labels": 11,
+  "missing_target_policy": "causal forward-fill for input history; excluded from fit labels and scoring",
+  "weather_policy": "trees/ARIMAX use prior-hour weather; TFT uses encoder weather only; LSTM calendar and target history",
+  "training": {
+    "epochs_completed": 37,
+    "best_validation_loss": 185.15077209472656,
+    "training_windows": 30402,
+    "early_stopping_windows": 3276,
+    "architecture": "lstm",
+    "upgraded_architecture": false
+  }
+}

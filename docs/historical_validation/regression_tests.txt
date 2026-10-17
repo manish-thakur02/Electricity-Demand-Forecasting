@@ -1,0 +1,39 @@
+.....................                                                    [100%]
+============================== warnings summary ===============================
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64
+  C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+  C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+  C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+..\..\work\venv\Lib\site-packages\matplotlib\_mathtext.py:45
+  C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\venv\Lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+tests/test_models.py::test_neural_first_prediction_ignores_unobserved_decoder_values[lstm]
+tests/test_models.py::test_neural_first_prediction_ignores_unobserved_decoder_values[tft]
+  C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\venv\Lib\site-packages\lightning\pytorch\utilities\parsing.py:209: Attribute 'loss' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['loss'])`.
+
+tests/test_models.py::test_neural_first_prediction_ignores_unobserved_decoder_values[lstm]
+tests/test_models.py::test_neural_first_prediction_ignores_unobserved_decoder_values[tft]
+  C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\venv\Lib\site-packages\lightning\pytorch\utilities\parsing.py:209: Attribute 'logging_metrics' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['logging_metrics'])`.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\jarvi\Documents\Codex\2026-10-10\he\work\test-results.xml -
+21 passed, 18 warnings in 25.29s

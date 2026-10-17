@@ -1,0 +1,17 @@
+# Private inputs and fitted artifacts
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+.env
+.env.*
+data/*
+!data/example_schema.csv
+!data/README.md
+results/
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.joblib
