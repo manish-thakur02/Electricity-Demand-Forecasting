@@ -140,6 +140,3 @@ Although all six models were evaluated on the same test dataset, the project has
 The repository includes the implementation, evaluation results and validation tests for reviewing the methodology.
 
 For additional details, see the [Validation Report](docs/VALIDATION.md) and [Publication Checklist](PUBLICATION_CHECKLIST.md).
-## Future work
-
-Document dataset provenance and units; preserve exact code revisions, environments, training logs and checkpoint-selection records; evaluate multiple seeds and uncertainty; examine errors by month/hour and peak events; test additional horizons and a separately specified seasonal statistical model; validate deployment with real prediction-time covariates.
