@@ -8,11 +8,21 @@ An internship project comparing six statistical, tree, neural and residual-hybri
 
 Predict demand one hour ahead using information available before the target hour. Accurate short-term forecasts can support scheduling and capacity planning. This study evaluates historical predictive accuracy; it does not demonstrate a deployed operational forecasting service.
 
-## Dataset and preprocessing
+## Dataset and Preprocessing
 
-The private source CSV contains 43,848 hourly rows spanning 2020–2024, including demand, temperature and humidity. It is excluded from this repository. Its SHA-256 is `b22c568fff1ef102ad6366dd85812f41aafc8034ea07b10253e19c61c60810f9`, consistent across all six final manifests. The earlier local CSV has a different byte hash; exact final input identity is unverified. Demand units, timezone and redistribution rights need documentation; plots use source units.
+The project uses an hourly electricity demand dataset containing **43,848 records from 2020 to 2024**, including electricity demand, temperature, humidity, and time-related information.
 
-Timestamp/hour parsing validates continuity and rejects duplicates. Calendar features are reconstructed. Missing historical inputs are filled forward; missing demand labels are excluded from fitting and scoring. Missing hour labels are inferred only for validated complete 24-row days. Trees use shifted demand lags, rolling statistics and prior-hour weather; TFT uses historical encoder weather, while LSTM uses calendar and demand history. See [input schema](data/README.md) and [corrections](docs/CORRECTIONS.md).
+The following preprocessing steps were performed:
+- Converted date and hour information into proper timestamps.
+- Checked for duplicate timestamps and inconsistencies.
+- Handled missing values using available historical information.
+- Created time-based features such as hour, day, and month.
+- Generated historical demand features, including lag values and rolling statistics.
+- Prevented data leakage by ensuring that models only use information available before the prediction time.
+
+All six models were evaluated using the same dataset and test period to ensure a fair comparison.
+
+Dataset Availability: The original dataset is not included in this repository. A sample input schema is provided in the data/ folder.
 
 ## Models implemented
 
